@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tugas Sesi 6</title>
+</head>
+<body>
+  <p id="pertama" style="font-size: 24px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+    debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+    maiores in?</p>
+  <p id="kedua" style="font-size: 24px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+    debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+    maiores in?</p>
+  <p id="ketiga" style="font-size: 24px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+    debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+    maiores in?</p>
+
+  <script>
+    const pertama = document.getElementById('pertama');
+    const kedua = document.getElementById('kedua');
+    const ketiga= document.getElementById('ketiga');
+
+    // Animasi warna merah dan hitam pada paragraf pertama
+    setInterval(function() {
+      pertama.style.color = 'red';
+      setTimeout(function() {
+        pertama.style.color = 'black';
+      }, 500);
+    }, 1000);
+
+    // Animasi warna hijau dan hitam pada paragraf kedua
+    setInterval(function() {
+      kedua.style.color = 'green';
+      setTimeout(function() {
+        kedua.style.color = 'black';
+      }, 500);
+    }, 1000);
+
+    // Animasi warna biru dan hitam pada paragraf ketiga
+    setInterval(function() {
+      ketiga.style.color = 'blue';
+      setTimeout(function() {
+        ketiga.style.color = 'black';
+      }, 500);
+    }, 1000);
+  </script>
+</body>
+</html>
